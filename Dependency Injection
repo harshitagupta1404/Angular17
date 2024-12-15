@@ -1,0 +1,13 @@
+@Injectable - This decorator shows that the class can be injected.
+Dependency can be provided in follwing ways - 
+
+1. At the application root level using providedIn
+
+@Injectable({
+  providedIn: 'root'
+})
+
+class HeroService {}
+
+It allows injecting the service into all other classes.
+*** When you provide the service at the root level, Angular creates a single, shared instance of the HeroService and injects it into any class that asks for it.
